@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const NavBar = ()=>{
@@ -6,11 +7,12 @@ const NavBar = ()=>{
       <>
         <header>
           <div className="nav-bar">
+            <Link to={'/'} className="brand">E-commerce</Link>
             <div className="brand">E-Cart</div>
             <div className="search-bar">
               <input type="text" placeholder="Search Products" />
             </div>
-            <div className="cart">Cart</div>
+            <Link to={'./cart'} className="cart">Cart</Link>
           </div>
 
           <div className="nav-bar-wrapper">
